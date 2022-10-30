@@ -37,14 +37,12 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  border: solid 2px var(--project_grey);
 }
-
 .progress_bar {
   position: absolute;
-  width: 50%;
-  height: 4px;
-  background-color: var(--project_blue);
+  width: 0;
+  height: 3px;
+  background-color: var(--full_color);
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -62,15 +60,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 4px var(--empty_color);
-  padding: 14px;
+  border: solid 3px var(--empty_color);
+  padding: 12px;
   transition-property: border;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  font-weight: lighter;
+  color: rgb(134, 132, 132);
 }
 
 .btn_container {
-  width: 170px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
 }
@@ -78,9 +78,9 @@ body {
   background-color: var(--full_color);
   color: #f6f7fb;
   border: 0;
-  padding: 8px 20px;
+  padding: 8px 28px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -91,4 +91,7 @@ body {
 button:disabled {
   background-color: #e0e0e0;
   cursor: not-allowed;
+}
+button:active {
+  transform: scale(0.95);
 }
